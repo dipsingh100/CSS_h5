@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffff31d6;
+}
+
+.heading {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.num {
+  padding-top: 22vh;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 40px;
+}
+
+.row1 {
+  animation: anim1 2s infinite alternate;
+  background-color: #00a6ae;
+}
+
+@keyframes anim1 {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+
+.row2 {
+  animation: anim2 2s infinite alternate;
+  background-color: #9f9c9c;
+}
+
+@keyframes anim2 {
+  0% {
+    transform: skewY(20deg);
+  }
+  100% {
+    transform: skewY(-20deg);
+  }
+}
+.row3 {
+  animation: anim3 3s infinite normal;
+  background-color: #00a6ae;
+}
+
+@keyframes anim3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.row41 {
+  animation: anim41 2s infinite alternate;
+  background-color: #00a6ae;
+}
+.row42 {
+  animation: anim42 2s infinite alternate;
+  background-color: brown;
+}
+.row43 {
+  animation: anim43 2s infinite alternate;
+  background-color: green;
+}
+
+@keyframes anim41 {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 0.5);
+  }
+}
+
+@keyframes anim42 {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0.5, 1);
+  }
+}
+
+@keyframes anim43 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(120deg);
+  }
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+.container a {
+  font-size: 1.6rem;
+}
+
+/* Second page  */
+
+.trans1 {
+  transition: width 2s;
+  background-color: greenyellow;
+}
+
+.trans1:hover {
+  width: 280px;
+}
+
+.trans2 {
+  transition: width 2s 1s, height 3s 1200ms;
+  background-color: greenyellow;
+}
+
+.trans2:hover {
+  width: 280px;
+  height: 280px;
+}
+
+.trans3 {
+  transition: width 2s linear;
+  background-color: greenyellow;
+}
+
+.trans3:hover {
+  width: 280px;
+}
+
+.trans4 {
+  transition: all 2s ease-out;
+  background-color: greenyellow;
+}
+
+.trans4:hover {
+  width: 280px;
+}
+
+.trans5 {
+  transition: width 2s ease-in;
+  background-color: greenyellow;
+
+}
+
+.trans5:hover {
+  width: 280px;
+}
+
+.trans6 {
+  transition: width 2s ease-out;
+  background-color: greenyellow;
+}
+
+.trans6:hover {
+  width: 280px;
+}
+.trans7 {
+  transition: width 2s ease-in-out;
+  background-color: greenyellow;
+}
+
+.trans7:hover {
+  width: 280px;
+}
