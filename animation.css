@@ -1,0 +1,138 @@
+body{
+    border: 10px solid;
+    border-color: white green white orange;
+}
+
+
+.sky{
+    height: 100vh;
+    background-image: url("images/sky.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.heading span{
+    background-color: white;
+}
+
+span:first-child{
+    background-color: orange;
+}
+
+
+span:last-child{
+    background-color: green;
+}
+
+.road{
+    height: 200px;
+    width: 500%;
+    background-image: url("images/road.jpg");
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    animation: road_anim 8s infinite linear;
+}
+
+@keyframes road_anim{
+    100%{
+        transform: translate(-2500px, 0);
+    }
+}
+
+.city{
+    height: 250px;
+    width: 500%;
+    background-image: url("images/city.png");
+    position: absolute;
+    bottom: 200px;
+    z-index: 1;
+    animation: city_anim 30s infinite linear;
+}
+
+@keyframes city_anim{
+    100%{
+        transform: translate(-2000px, 0);
+    }
+}
+
+.sun{
+    height: 15vh;
+    width: 100%;
+    background-image: url("images/sun.png");
+    background-repeat: no-repeat;
+    background-size: 6%;
+    top: 8vh;
+    right: -88vw;
+    position: absolute;
+    z-index: 15;
+}
+
+.flag{
+    height: 10vh;
+    width: 100%;
+    background-image: url("images/Tiranga1.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 31vh;
+    left: 55vw;
+    z-index: 12;
+
+}
+
+.car{
+    height: 30vh;
+    width: 100%;
+    background-image: url("images/car.png");
+    background-repeat: no-repeat;
+    background-size: 28%;
+    background-position: bottom left;
+    position: absolute;
+    left: 36%;
+    bottom: 16.2vh;
+    z-index: 3;
+    animation: car_anim 1s infinite linear;
+}
+
+@keyframes car_anim{
+    0%{
+        transform: translateY(1px);
+    }
+    100%{
+        transform: translateY(-1px);
+    }
+}
+
+.wheel img{
+    width: 4.8vw;
+    position: absolute;
+    bottom: 17vh; 
+    z-index: 10;
+}
+
+.wheel1{
+    left: 37vw;
+    animation: wheel_rot 2s linear infinite;
+}
+
+.wheel2{
+    left: 53.5vw;
+    z-index: 10;
+    animation: wheel_rot 2s linear infinite;
+}
+
+@keyframes wheel_rot{
+    100%{
+        transform: rotate(360deg);
+    }
+}
