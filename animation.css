@@ -72,11 +72,19 @@ span:last-child{
     background-image: url("images/sun.png");
     background-repeat: no-repeat;
     background-size: 6%;
-    top: 8vh;
+    top: 9vh;
     right: -88vw;
     position: absolute;
     z-index: 15;
+    animation: sun_anim 90s infinite linear;
 }
+
+@keyframes sun_anim{
+    100%{
+        transform: translate(-100vw, 0);
+    }
+}
+
 
 .flag{
     height: 10vh;
